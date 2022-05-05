@@ -1,0 +1,6 @@
+*.pyc
+*.DS_Store
+*.swp
+result
+__pycache__
+.pytest_cache
