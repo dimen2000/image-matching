@@ -10,24 +10,24 @@
 Build image with docker
 
 ```bash
-$ docker build --tag image-matching .
+docker build --tag image-matching .
 ```
 Run image
 
 ```bash
-$ docker run --name img-match-doc image-matching
+docker run --name img-match-doc image-matching
 ```
 
 Copy result image to local directory
 
 ```bash
-$ docker cp img-match-doc:/result .
+docker cp img-match-doc:/result .
 ```
 
 Remove docker image
 
 ```bash
-$ docker rm img-match-doc
+docker rm img-match-doc
 ```
 
 #### Option 2 run with python via conda
@@ -39,19 +39,19 @@ $ docker rm img-match-doc
 Create superglue enviropment for conda
 
 ```bash
-$ conda env create -f environment.yml
+conda env create -f environment.yml
 ```
 
 Activate superglue enviropment
 
 ```bash
-$ conda activate superglue
+conda activate superglue
 ```
 
 Run script
 
 ```bash
-$ python test.py
+python test.py
 ```
 
 #### Option 3 run with python via pipenv
@@ -63,17 +63,17 @@ $ python test.py
 Create superglue enviropment
 
 ```bash
-$ pipenv shell
+pipenv shell
 ```
 
 Install requirements
 
 ```bash
-$ pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 Run script
 
 ```bash
-$ python test.py
+python test.py
 ```
